@@ -112,7 +112,7 @@ h1 {letter-spacing: 6px}
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Milan, Italy</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +39 3475348600</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: 4c.designstudio@mail.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: 4c.designstudio@gmail.com</p>
     </div>
     
        
@@ -142,24 +142,6 @@ h1 {letter-spacing: 6px}
   
 <!-- END PAGE CONTENT -->
 </div>
-
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
 
 // Open and close sidebar
 function openNav() {
