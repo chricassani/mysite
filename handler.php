@@ -1,26 +1,10 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
-
- */
-require_once './vendor/autoload.php';
-
-use FormGuide\Handlx\FormHandler;
-
-
-$pp = new FormHandler(); 
-
-$validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
-$validator->field('email')->isEmail();
-$validator->field('comments')->maxLength(6000);
-
-
-
-
-$pp->sendEmailTo('4c.designstudio@gmail.com'); // ← Your email here
-
-echo $pp->process($_POST);
+    if(isset($_POST['submit']))
+    {
+        $name = $_POST['name']; // Get Name value from HTML Form
+        $email_id = $_POST['email']; // Get Email Value
+        $mobile_no = $_POST['mobile']; // Get Mobile No
+        $msg = $_POST['message']; // Get Message Value
+         
+        $to = "ch.cassani@gmail.com"; // You can change here your Email
+        $subject = "'$name' has been sent a mail"; // This is your subject
