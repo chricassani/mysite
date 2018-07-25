@@ -8,3 +8,31 @@
          
         $to = "ch.cassani@gmail.com"; // You can change here your Email
         $subject = "'$name' has been sent a mail"; // This is your subject
+
+$message ="
+        <html>
+            <body>
+                <table style='width:600px;'>
+                    <tbody>
+                        <tr>
+                            <td style='width:150px'><strong>Name: </strong></td>
+                            <td style='width:400px'>$name</td>
+                        </tr>
+                        <tr>
+                            <td style='width:150px'><strong>Email ID: </strong></td>
+                            <td style='width:400px'>$email_id</td>
+                        </tr>
+                        <tr>
+                            <td style='width:150px'><strong>Mobile No: </strong></td>
+                            <td style='width:400px'>$mobile_no</td>
+                        </tr>
+                        <tr>
+                            <td style='width:150px'><strong>Message: </strong></td>
+                            <td style='width:400px'>$msg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </body>
+        </html>
+        ";
+       
